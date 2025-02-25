@@ -27,3 +27,13 @@ for val in test.values():
    
 res=res/len(test)
 print("res total outer :",res)
+
+# ---------------------> removing element from dictionary
+new_dict = {5: 67,6:55,7: None,8:33,9:None,1:87,2:None,3:9,4:90,5:44}
+print(new_dict)
+
+for key, value in list(new_dict.items()):
+    del new_dict[key]
+
+print("Empty dictionary")
+print(new_dict)
