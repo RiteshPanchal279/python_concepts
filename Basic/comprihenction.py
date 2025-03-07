@@ -1,18 +1,18 @@
-# squares=[x**2 for x in range(10)]
-# print(squares)
+squares=[x**2 for x in range(10)]
+print(squares)
 
-# even_squers=[x**2 for x in range(1,11) if x % 2==0]
-# print(even_squers)
+even_squers=[x**2 for x in range(1,11) if x % 2==0]
+print(even_squers)
 
-# odd_squers=[x**2 for x in range(1,11) if x % 2==1]
-# print(odd_squers)
+odd_squers=[x**2 for x in range(1,11) if x % 2==1]
+print(odd_squers)
 
-# pairs=[(x,x**2) for x in range(1,5)]
-# print(pairs)
+pairs=[(x,x**2) for x in range(1,5)]
+print(pairs)
 
-# matrix=[[1,2,3,4],[5,4,2],[6,7,8,9]]
-# flatten=[element for row in matrix for element in row ]
-# print(flatten)
+matrix=[[1,2,3,4],[5,4,2],[6,7,8,9]]
+flatten=[element for row in matrix for element in row ]
+print(flatten)
 
 # --------------> printing prime numbers
 def is_prime(num):
