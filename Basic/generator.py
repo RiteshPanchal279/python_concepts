@@ -1,3 +1,4 @@
+# lab_19 is on Generator 
 def user_input_gen():
     while True:
         command = input("Enter a command(type 'exit' to quit):")
@@ -9,20 +10,33 @@ def process_commands():
     for command in user_input_gen():
         print(f"execute command : {command}")
 
-process_commands()
+# process_commands()
 # -------------------->
 
-# def count(num):
-#     counter=1
-#     while counter<=num:
-#         yield counter
-#         counter+=1
+def count(num):
+    counter=1
+    while counter<=num:
+        yield counter
+        counter+=1
 
-# gen = count(10)
+gen = count(10)
 
 
-# for n in gen:
-#    print(n)
+for n in gen:
+   print(n,end=",")
+
+ # -------------------->
+
+def infinite():
+    num=0
+    while True:
+        yield num
+        num+=1
+
+count = infinite()
+print()
+for _ in range(10):
+    print(next(count),end=" ")
 
 # -------------------->
 # numbers=[1,2,3,4,5,6,7,8,9,10]
@@ -52,14 +66,3 @@ process_commands()
 # for w in ucase:
 #     print(w,end=" ")
 
-# # -------------------->
-
-def infinite(start=0):
-    while True:
-        yield start
-        start+=1
-
-counter = infinite()
-
-for i in range(5):
-    print(next(counter))
