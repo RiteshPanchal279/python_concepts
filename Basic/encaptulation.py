@@ -7,7 +7,7 @@ class Myclass:
     
 m1 = Myclass(500)
 print(m1.protected_method())
-
+# ---------------------------------------------->
 from abc import ABC, abstractmethod
 
 
