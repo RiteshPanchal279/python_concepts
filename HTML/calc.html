@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <form id="form1" name="form1" oninput="out1.value=parseInt(num1.value,10)+parseInt(num2.value,10)">
+
+      <fieldset>
+         <legend>Addition : </legend>
+
+         <input type="number" id="num1" name="num1" value="0"> <br>
+         +
+         <br>
+         <input type="number" id="num2" name="num2" value="0">
+
+      </fieldset>
+   </form>
+   <label> Add result : </label>
+   <output name="out1" for="num1 num2" form="form1">0</output>
+
+   <br><br>
+
+   <form id="form2" name="form2" oninput="out2.value=parseInt(num1.value,10)-parseInt(num2.value,10)">
+      <fieldset>
+         <legend>Substarction : </legend>
+         <input type="number" id="num1" name="num1" value="0"> <br>
+         -
+         <br>
+         <input type="number" id="num2" name="num2" value="0">
+      </fieldset>
+   </form>
+   <label> Sub result : </label>
+   <output name="out2" for="num1 num2" form="form2">0</output>
+
+   <br><br>
+
+   <form id="form3" name="form3" oninput="out3.value=parseInt(num1.value,10)*parseInt(num2.value,10)">
+      <fieldset>
+         <legend>Multiplaction : </legend>
+         <input type="number" id="num1" name="num1" value="0"> <br>
+         *
+         <br>
+         <input type="number" id="num2" name="num2" value="0">
+      </fieldset>
+   </form>
+   <label> Mul result : </label>
+   <output name="out3" for="num1 num2" form="form3">0</output>
+   <br><br>
+
+   <form id="form4" name="form4" oninput="out4.value=parseInt(num1.value,10)/parseInt(num2.value,10)">
+      <fieldset>
+         <legend>Division : </legend>
+         <input type="number" id="num1" name="num1" value="0"> <br>
+         /
+         <br>
+         <input type="number" id="num2" name="num2" value="0">
+      </fieldset>
+   </form>
+   <label> Mul result : </label>
+   <output name="out4" for="num1 num2" form="form4">0</output>
+
+</body>
+
+</html>
