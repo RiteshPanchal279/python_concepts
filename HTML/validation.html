@@ -47,7 +47,7 @@
                <div class="col-md-6">
                   <label for="name" class="form-label">Name</label>
                   <input type="text" class="form-control" id="name" required>
-                  <div class="error" id="namerror"></div>
+                  <div class="error" id="nameError"></div>
                </div>
                <div class="col-md-6">
                   <label for="email" class="form-label">Email</label>
@@ -72,19 +72,19 @@
             <div class="mb-3">
                <label for="phone" class="form-label">Phone No</label>
                <input type="tel" class="form-control" id="phone" required>
-               <div class="error" id="phonerror"></div>
+               <div class="error" id="phoneError"></div>
             </div>
 
             <div class="row mb-3">
                <div class="col-md-6">
                   <label for="dob" class="form-label">Date of Birth</label>
                   <input type="date" class="form-control" id="dob" required>
-                  <div class="error" id="doberror"></div>
+                  <div class="error" id="dobError"></div>
                </div>
                <div class="col-md-6">
                   <label for="age" class="form-label">Age</label>
                   <input type="number" class="form-control" id="age" required>
-                  <div class="error" id="agerror"></div>
+                  <div class="error" id="ageError"></div>
                </div>
             </div>
 
@@ -98,7 +98,14 @@
                   <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
                   <label class="form-check-label" for="female">Female</label>
                </div>
-               <div class="error mt-1" id="gendererror"></div>
+               <div class="error mt-1" id="genderError"></div>
+
+               <div class="mb-3">
+                  <label for="website" class="form-label">Website</label>
+                  <input type="url" class="form-control" id="website" required>
+                  <div class="error" id="websiteError"></div>
+               </div>
+
                <div class="row mb-3">
                   <label for="country" class="form-label">Country</label>
                   <select class="form-select" id="country" required>
@@ -106,8 +113,8 @@
                      <option value="UK">UK</option>
                      <option value="USA">USA</option>
                      <option value="INDIA">INDIA</option>
-
                   </select>
+                  <div class="error" id="countryError"></div>
                </div>
             </div>
             <div class="mb-3">
@@ -115,13 +122,13 @@
                <label for="message" class="form-label"> Message</label>
                <textarea class="form-control" id="message" rows="4" required>
                </textarea>
-               <div class="error" id="messagerror"></div>
+               <div class="error" id="messageError"></div>
             </div>
             <div class="form check mb-3">
                <input type="checkbox" class=" form-check-input" id="terms" required>
                <label for="terms" class="form-check-label">Agree to terms</label>
             </div>
-            <div class="error" id="termerror"></div>
+            <div class="error" id="termsError"></div>
 
             <div class="text-center">
                <button type="submit" class="btn btn-primary px-4">Register</button>
@@ -131,5 +138,6 @@
    </div>
 
 </body>
+<script src="validation.js"></script>
 
 </html>
