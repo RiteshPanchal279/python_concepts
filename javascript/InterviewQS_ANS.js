@@ -44,3 +44,17 @@ function mul(x){
 }
 
 console.log(mul(2)(3)(5))
+
+
+// Q 5) You can create clouser to keep the value passed to the function "createBase" even after the inner function is returned. The innter function that is being returned is created within an outer function,making it a closure,and it has access to the variable within the outer function in this case the variable "naseNumber"  
+
+function createBase(baseNumber){
+   return function(N){
+      return baseNumber + N;
+   }
+}
+
+const addSix = createBase(6)
+console.log(addSix(10))//return 16
+addSix(21)//return 27
+
